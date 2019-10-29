@@ -12,6 +12,6 @@ public class PageBase
 	{
 		super();
 		this.driver = driver;
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 15);
 	}
 }
