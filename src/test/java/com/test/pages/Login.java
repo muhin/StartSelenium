@@ -19,6 +19,9 @@ public class Login extends PageBase
 	@FindBy(xpath = "//input[@name='password']")
 	WebElement userPassword;
 
+	@FindBy(xpath = "//input[(@name='login')]")
+	WebElement loginButton;
+
 	public void setUserName(final String user)
 	{
 		userName.sendKeys(user);
@@ -29,4 +32,8 @@ public class Login extends PageBase
 		userPassword.sendKeys(password);
 	}
 
+	public void clicLoginButton()
+	{
+		loginButton.click();
+	}
 }
