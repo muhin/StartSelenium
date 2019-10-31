@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class login extends PageBase
+public class Login extends PageBase
 {
-	public login(final WebDriver driver)
+	public Login(final WebDriver driver)
 	{
 		super(driver);
 		PageFactory.initElements(driver, this);
