@@ -13,7 +13,10 @@ public class Login extends PageBase
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@name='userName']")
+	// @FindBy(xpath = "//input[@name='userName']")
+	// WebElement userName;
+
+	@FindBy(name = "userName")
 	WebElement userName;
 
 	@FindBy(xpath = "//input[@name='password']")
